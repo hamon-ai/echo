@@ -1,0 +1,18 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Roboto.moc3",
+		"Textures": [
+			"Roboto.2048/Roboto.texture_00.png"
+		],
+		"Physics": "Roboto.physics3.json",
+		"DisplayInfo": "Roboto.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}
