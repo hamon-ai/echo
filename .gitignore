@@ -1,2 +1,7 @@
 venv/
 .pids/
+services/tts
+services/stt
+services/llm
+services/panel
+__pycache__
