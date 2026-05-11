@@ -1,3 +1,15 @@
 [submodule "services/tts"]
 	path = services/tts
-	url = git@github.com:ramonasuncion/tts.git
+	url = git@github.com:ramonasuncion/echo-tts-service.git
+[submodule "services/stt"]
+	path = services/stt
+	url = git@github.com:ramonasuncion/echo-stt-service.git
+[submodule "services/llm"]
+	path = services/llm
+	url = git@github.com:ramonasuncion/llm.git
+[submodule "services/avatar"]
+	path = services/avatar
+	url = git@github.com:ramonasuncion/echo-avatar-service.git
+[submodule "services/memory"]
+	path = services/memory
+	url = git@github.com:ramonasuncion/echo-memory-service.git
