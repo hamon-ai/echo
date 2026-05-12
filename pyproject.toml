@@ -1,0 +1,22 @@
+[project]
+name = "ai-vtuber"
+version = "0.1.0"
+description = "Echo AI VTuber monorepo"
+requires-python = ">=3.11"
+dependencies = [
+    "llm",
+    "stt",
+    "tts",
+]
+
+[tool.uv.workspace]
+members = [
+    "services/llm/src",
+    "services/stt/src",
+    "services/tts/src",
+]
+
+[tool.uv.sources]
+llm = { workspace = true }
+stt = { workspace = true }
+tts = { workspace = true }
