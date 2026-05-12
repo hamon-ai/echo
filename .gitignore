@@ -1,7 +1,4 @@
-venv/
+.venv/
 .pids/
-services/tts
-services/stt
-services/llm
-services/panel
-__pycache__
+__pycache__/
+docs/
