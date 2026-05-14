@@ -8,9 +8,9 @@ A Live2D AI VTuber built as a microservices monorepo.
 |---------|--------|---------|
 | [tts](https://github.com/ramonasuncion/echo-tts-service) | public | GPL 2.0 |
 | [stt](https://github.com/ramonasuncion/echo-stt-service) | public | GPL 2.0 |
-| llm | private | |
-| avatar | private | |
-| memory | private | |
+| [llm](https://github.com/ramonasuncion/echo-llm-service) | private | |
+| [avatar](https://github.com/ramonasuncion/echo-avatar-service) | private | |
+| [memory](https://github.com/ramonasuncion/echo-memory-service) | private | |
 
 > [!NOTE]
 > The private submodules are not publicly accessible. This is intentional.
