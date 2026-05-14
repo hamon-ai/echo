@@ -6,8 +6,8 @@ A Live2D AI VTuber built as a microservices monorepo.
 
 | Service | Access | License |
 |---------|--------|---------|
-| tts | public | GPL 2.0 |
-| stt | public | GPL 2.0 |
+| [tts](https://github.com/ramonasuncion/echo-tts-service) | public | GPL 2.0 |
+| [stt](https://github.com/ramonasuncion/echo-stt-service) | public | GPL 2.0 |
 | llm | private | |
 | avatar | private | |
 | memory | private | |
