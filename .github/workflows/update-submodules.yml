@@ -27,5 +27,6 @@ jobs:
           git diff --quiet && git diff --staged --quiet || (
             git add . &&
             git commit -m "Update submodule pointers" &&
+            git pull --rebase &&
             git push
           )
