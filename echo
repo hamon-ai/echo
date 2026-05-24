@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
 BASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SERVICES=(tts:src/app.py llm:src/app.py stt:src/app.py avatar:src/server.py)
+SERVICES=(tts:src/app.py:8000 llm:src/app.py:8001 stt:src/app.py:8002 avatar:src/server.py:8003)
 
 start() {
     mkdir -p "$BASE/.pids"
     for entry in "${SERVICES[@]}"; do
-        name="${entry%%:*}" script="${entry##*:}"
+        IFS=':' read -r name script port <<< "$entry"
         cd "$BASE/services/$name"
         uv run python "$script" >> "$BASE/.pids/$name.log" 2>&1 &
         echo $! > "$BASE/.pids/$name.pid"
+        printf '  %-7s http://localhost:%s\n' "$name" "$port"
     done
     echo "Started. Logs: ./echo logs"
 }
