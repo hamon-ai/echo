@@ -21,6 +21,6 @@ A Live2D AI VTuber built as a microservices monorepo.
 ```bash
 git clone git@github.com:IntelligentSandbox/echo.git
 cd echo
-git submodule update --init services/tts services/stt
+git submodule update --init services/tts services/stt services/panel
 uv sync
 ```
