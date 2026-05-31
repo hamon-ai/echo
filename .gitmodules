@@ -13,3 +13,6 @@
 [submodule "services/memory"]
 	path = services/memory
 	url = git@github.com:ramonasuncion/echo-memory-service.git
+[submodule "services/panel"]
+	path = services/panel
+	url = git@github.com:IntelligentSandbox/echo-panel-service.git

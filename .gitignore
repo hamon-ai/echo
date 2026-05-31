@@ -1,4 +1,4 @@
 .venv/
 .pids/
 __pycache__/
-docs/
+ROADMAP.md
