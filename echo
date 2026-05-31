@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 BASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SERVICES=(tts:src/app.py:8000 llm:src/app.py:8001 stt:src/app.py:8002 avatar:src/server.py:8003)
+SERVICES=(tts:src/app.py:47100 llm:src/app.py:47101 stt:src/app.py:47102 avatar:src/server.py:47103 memory:src/app.py:47104 panel:serve.py:47105)
 
 start() {
     mkdir -p "$BASE/.pids"
@@ -16,7 +16,7 @@ start() {
 }
 
 stop() {
-    fuser -k 8000/tcp 8001/tcp 8002/tcp 8003/tcp 8004/tcp 2>/dev/null
+    fuser -k 47100/tcp 47101/tcp 47102/tcp 47103/tcp 47104/tcp 47105/tcp 2>/dev/null
     rm -f "$BASE/.pids"/*.pid
     echo "Stopped."
 }
