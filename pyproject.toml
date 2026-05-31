@@ -6,6 +6,7 @@ requires-python = ">=3.11"
 dependencies = [
     "avatar",
     "llm",
+    "memory",
     "stt",
     "tts",
 ]
@@ -14,6 +15,7 @@ dependencies = [
 members = [
     "services/avatar/src",
     "services/llm/src",
+    "services/memory/src",
     "services/stt/src",
     "services/tts/src",
 ]
@@ -21,5 +23,6 @@ members = [
 [tool.uv.sources]
 avatar = { workspace = true }
 llm = { workspace = true }
+memory = { workspace = true }
 stt = { workspace = true }
 tts = { workspace = true }
