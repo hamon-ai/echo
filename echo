@@ -4,6 +4,10 @@ BASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SERVICES=(tts:src/app.py:47100 llm:src/app.py:47101 stt:src/app.py:47102 avatar:src/server.py:47103 memory:src/app.py:47104 panel:serve.py:47105)
 
 start() {
+    if [ ! -f "$BASE/.pids/.setup" ]; then
+        echo "Run ./echo setup first."
+        exit 1
+    fi
     mkdir -p "$BASE/.pids"
     for entry in "${SERVICES[@]}"; do
         IFS=':' read -r name script port <<< "$entry"
@@ -24,6 +28,14 @@ stop() {
 setup() {
     git submodule update --init --recursive
     uv sync
+    for entry in "${SERVICES[@]}"; do
+        IFS=':' read -r name script port <<< "$entry"
+        if [ -f "$BASE/services/$name/src/setup.py" ]; then
+            ( cd "$BASE/services/$name/src" && python3 setup.py --no-venv )
+        fi
+    done
+    mkdir -p "$BASE/.pids"
+    touch "$BASE/.pids/.setup"
 }
 
 logs() { tail -f "$BASE/.pids"/*.log; }
