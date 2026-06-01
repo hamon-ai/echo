@@ -1,0 +1,13 @@
+{
+  "remote.autoForwardPorts": true,
+  "remote.autoForwardPortsSource": "process",
+  "remote.portsAttributes": {
+    "47100": { "label": "TTS", "onAutoForward": "silent" },
+    "47101": { "label": "LLM", "onAutoForward": "silent" },
+    "47102": { "label": "STT", "onAutoForward": "silent" },
+    "47103": { "label": "Avatar", "onAutoForward": "openBrowserOnce" },
+    "47104": { "label": "Memory", "onAutoForward": "silent" },
+    "47105": { "label": "Panel", "onAutoForward": "openBrowserOnce" }
+  },
+  "remote.otherPortsAttributes": { "onAutoForward": "ignore" }
+}
