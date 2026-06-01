@@ -34,5 +34,5 @@ case "$1" in
     restart) stop; sleep 1; start ;;
     setup)   setup ;;
     logs)    logs ;;
-    *)       echo "Usage: ./echo start|stop|restart|setup|logs" ;;
+    *)       echo "usage: ./echo start|stop|restart|setup|logs" ;;
 esac
