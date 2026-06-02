@@ -84,8 +84,6 @@ def from_upstream(service: str, exc: Exception) -> ServiceError:
             return _AUTH.get(service, unavailable)()
         if status == 429:
             return LlmRateLimited()
-        if status >= 500:
-            return unavailable()
         return unavailable()
 
     # timeouts, connection refused and other transport errors
