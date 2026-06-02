@@ -5,7 +5,6 @@ description = "Echo AI VTuber monorepo"
 requires-python = ">=3.11"
 dependencies = [
     "avatar",
-    "echo-common",
     "llm",
     "memory",
     "stt",
@@ -15,7 +14,6 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "services/avatar/src",
-    "services/common",
     "services/llm/src",
     "services/memory/src",
     "services/stt/src",
@@ -24,7 +22,6 @@ members = [
 
 [tool.uv.sources]
 avatar = { workspace = true }
-echo-common = { workspace = true }
 llm = { workspace = true }
 memory = { workspace = true }
 stt = { workspace = true }
