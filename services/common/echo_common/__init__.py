@@ -1,3 +1,4 @@
+from echo_common.text import strip_markdown
 from echo_common.errors import (
     LlmError,
     LlmRateLimited,
@@ -13,6 +14,7 @@ from echo_common.errors import (
 )
 
 __all__ = [
+    "strip_markdown",
     "LlmError",
     "LlmRateLimited",
     "MemoryServiceError",
