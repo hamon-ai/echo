@@ -13,7 +13,6 @@ resolution-markers = [
 members = [
     "ai-vtuber",
     "avatar",
-    "echo-common",
     "llm",
     "memory",
     "stt",
@@ -35,7 +34,6 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "avatar" },
-    { name = "echo-common" },
     { name = "llm" },
     { name = "memory" },
     { name = "stt" },
@@ -45,7 +43,6 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "avatar", virtual = "services/avatar/src" },
-    { name = "echo-common", editable = "services/common" },
     { name = "llm", virtual = "services/llm/src" },
     { name = "memory", virtual = "services/memory/src" },
     { name = "stt", virtual = "services/stt/src" },
@@ -398,7 +395,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "echo-common", editable = "services/common" },
+    { name = "echo-common", git = "ssh://git@github.com/hamon-ai/echo.git?subdirectory=services%2Fcommon" },
     { name = "fastapi", specifier = ">=0.115.0" },
     { name = "httpx", specifier = ">=0.27.0" },
     { name = "pydantic", specifier = ">=2.9.0" },
@@ -1098,13 +1095,10 @@ sdist = { url = "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf57
 [[package]]
 name = "echo-common"
 version = "0.1.0"
-source = { editable = "services/common" }
+source = { git = "ssh://git@github.com/hamon-ai/echo.git?subdirectory=services%2Fcommon#fbd8cddb413e0a2a99ef068e6f47a5b0e0aba6c1" }
 dependencies = [
     { name = "httpx" },
 ]
-
-[package.metadata]
-requires-dist = [{ name = "httpx", specifier = ">=0.27.0" }]
 
 [[package]]
 name = "espeakng-loader"
