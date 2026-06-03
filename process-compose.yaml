@@ -1,0 +1,21 @@
+version: "0.5"
+
+processes:
+  tts:
+    command: "../../.venv/bin/python src/app.py"
+    working_dir: services/tts
+  llm:
+    command: "../../.venv/bin/python src/app.py"
+    working_dir: services/llm
+  stt:
+    command: "../../.venv/bin/python src/app.py"
+    working_dir: services/stt
+  avatar:
+    command: "../../.venv/bin/python src/server.py"
+    working_dir: services/avatar
+  memory:
+    command: "../../.venv/bin/python src/app.py"
+    working_dir: services/memory
+  panel:
+    command: "../../.venv/bin/python serve.py"
+    working_dir: services/panel
