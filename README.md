@@ -8,7 +8,7 @@ A Live2D AI VTuber built as a microservices monorepo.
 | -------------------------------------------- | ------- | ------- |
 | [tts](https://github.com/ramonlabs/tts)       | public  | GPL 2.0 |
 | [stt](https://github.com/ramonlabs/stt)       | public  | GPL 2.0 |
-| [panel](https://github.com/ramonlabs/panel)   | public  | GPL 2.0 |
+| [panel](https://github.com/ramonlabs/panel)   | private |         |
 | [llm](https://github.com/ramonlabs/llm)       | private |         |
 | [avatar](https://github.com/ramonlabs/avatar) | private |         |
 | [memory](https://github.com/ramonlabs/memory) | private |         |
