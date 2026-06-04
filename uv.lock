@@ -395,7 +395,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "echo-common", git = "ssh://git@github.com/ramonics/echo.git?subdirectory=services%2Fcommon" },
+    { name = "echo-common", git = "ssh://git@github.com/ramonlabs/echo.git?subdirectory=services%2Fcommon" },
     { name = "fastapi", specifier = ">=0.115.0" },
     { name = "httpx", specifier = ">=0.27.0" },
     { name = "pydantic", specifier = ">=2.9.0" },
@@ -1095,7 +1095,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf57
 [[package]]
 name = "echo-common"
 version = "0.1.0"
-source = { git = "ssh://git@github.com/ramonics/echo.git?subdirectory=services%2Fcommon#2bcdf4d8c2f849adbb95fe36bd87b1a9a28742a6" }
+source = { git = "ssh://git@github.com/ramonlabs/echo.git?subdirectory=services%2Fcommon#2bcdf4d8c2f849adbb95fe36bd87b1a9a28742a6" }
 dependencies = [
     { name = "httpx" },
     { name = "mistune" },
@@ -2020,7 +2020,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "ddgs", specifier = ">=9.14.4" },
-    { name = "echo-common", git = "ssh://git@github.com/ramonics/echo.git?subdirectory=services%2Fcommon" },
+    { name = "echo-common", git = "ssh://git@github.com/ramonlabs/echo.git?subdirectory=services%2Fcommon" },
     { name = "fastapi", specifier = ">=0.115.0" },
     { name = "httpx", specifier = ">=0.27.0" },
     { name = "pydantic", specifier = ">=2.9.0" },
@@ -2296,7 +2296,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "echo-common", git = "ssh://git@github.com/ramonics/echo.git?subdirectory=services%2Fcommon" },
+    { name = "echo-common", git = "ssh://git@github.com/ramonlabs/echo.git?subdirectory=services%2Fcommon" },
     { name = "fastapi", specifier = ">=0.115.0" },
     { name = "httpx", specifier = ">=0.27.0" },
     { name = "pydantic", specifier = ">=2.9.0" },
@@ -4445,7 +4445,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "aiofiles", specifier = ">=23.0.0" },
-    { name = "echo-common", git = "ssh://git@github.com/ramonics/echo.git?subdirectory=services%2Fcommon" },
+    { name = "echo-common", git = "ssh://git@github.com/ramonlabs/echo.git?subdirectory=services%2Fcommon" },
     { name = "fastapi", specifier = ">=0.115.0" },
     { name = "faster-whisper", specifier = ">=1.0.0" },
     { name = "numpy", specifier = ">=1.26.0" },
@@ -4796,7 +4796,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "cachetools", specifier = ">=5.5.0" },
-    { name = "echo-common", git = "ssh://git@github.com/ramonics/echo.git?subdirectory=services%2Fcommon" },
+    { name = "echo-common", git = "ssh://git@github.com/ramonlabs/echo.git?subdirectory=services%2Fcommon" },
     { name = "fastapi", specifier = ">=0.115.0" },
     { name = "itsdangerous", specifier = ">=2.2.0" },
     { name = "jupyter", specifier = ">=1.1.0" },
