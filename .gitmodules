@@ -1,18 +1,18 @@
 [submodule "services/tts"]
 	path = services/tts
-	url = git@github.com:ramonics/tts.git
+	url = git@github.com:ramonics/echo-tts.git
 [submodule "services/stt"]
 	path = services/stt
-	url = git@github.com:ramonics/stt.git
+	url = git@github.com:ramonics/echo-stt.git
 [submodule "services/llm"]
 	path = services/llm
-	url = git@github.com:ramonics/llm.git
+	url = git@github.com:ramonics/echo-llm.git
 [submodule "services/avatar"]
 	path = services/avatar
-	url = git@github.com:ramonics/avatar.git
+	url = git@github.com:ramonics/echo-avatar.git
 [submodule "services/memory"]
 	path = services/memory
-	url = git@github.com:ramonics/memory.git
+	url = git@github.com:ramonics/echo-memory.git
 [submodule "services/panel"]
 	path = services/panel
-	url = git@github.com:ramonics/panel.git
+	url = git@github.com:ramonics/echo-panel.git
