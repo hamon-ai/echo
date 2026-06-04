@@ -4,14 +4,14 @@ A Live2D AI VTuber built as a microservices monorepo.
 
 ## Services
 
-| Service                                      | Access  | License |
-| -------------------------------------------- | ------- | ------- |
-| [tts](https://github.com/ramonlabs/tts)       | public  | GPL 2.0 |
-| [stt](https://github.com/ramonlabs/stt)       | public  | GPL 2.0 |
-| [panel](https://github.com/ramonlabs/panel)   | private |         |
-| [llm](https://github.com/ramonlabs/llm)       | private |         |
-| [avatar](https://github.com/ramonlabs/avatar) | private |         |
-| [memory](https://github.com/ramonlabs/memory) | private |         |
+| Service                                            | Access  | License |
+| -------------------------------------------------- | ------- | ------- |
+| [tts](https://github.com/ramonlabs/echo-tts)       | public  | GPL 2.0 |
+| [stt](https://github.com/ramonlabs/echo-stt)       | public  | GPL 2.0 |
+| [panel](https://github.com/ramonlabs/echo-panel)   | private |         |
+| [llm](https://github.com/ramonlabs/echo-llm)       | private |         |
+| [avatar](https://github.com/ramonlabs/echo-avatar) | private |         |
+| [memory](https://github.com/ramonlabs/echo-memory) | private |         |
 
 > [!NOTE]
 > The private submodules are not publicly accessible. This is intentional.
