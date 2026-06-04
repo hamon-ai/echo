@@ -1,4 +1,5 @@
 from echo_common.text import strip_markdown
+from echo_common.paths import resolve_path, service_root
 from echo_common.errors import (
     LlmError,
     LlmRateLimited,
@@ -15,6 +16,8 @@ from echo_common.errors import (
 
 __all__ = [
     "strip_markdown",
+    "resolve_path",
+    "service_root",
     "LlmError",
     "LlmRateLimited",
     "MemoryServiceError",
