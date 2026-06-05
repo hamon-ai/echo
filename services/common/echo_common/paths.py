@@ -2,7 +2,7 @@ import os
 
 
 def service_root(anchor):
-    """Service root for a module living in <service>/src/. Pass that module's __file__."""
+    """Return the service root. Pass the module's __file__ as anchor."""
     return os.path.dirname(os.path.dirname(os.path.abspath(anchor)))
 
 
